@@ -1,0 +1,273 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #fff;
+}
+
+/* Header */
+header {
+    background-color: #1e1e1e;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 255, 255, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: #0af;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #bbb;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #0af;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff9800;
+}
+
+/* Sections */
+section {
+    padding: 30px;
+    margin: 30px auto;
+    background-color: #222;
+    border-radius: 8px;
+    max-width: 900px;
+    box-shadow: 0 4px 10px rgba(255, 152, 0, 0.2);
+}
+
+/* Headings */
+h1, h2 {
+    color: #0af;
+}
+
+h2 {
+    border-bottom: 2px solid #0af;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Links */
+a {
+    color: #ff9800;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0af;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e1e1e;
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #bbb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 20px;
+        margin: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 15px;
+    }
+}
+nav ul li a.active {
+    color: #ff9800;
+    font-weight: bold;
+    border-bottom: 2px solid #ff9800;
+}
+/* 🌟 General Styles */
+body {
+    transition: background 0.3s, color 0.3s;
+}
+
+/* 🔥 Active Navigation Link */
+nav ul li a.active {
+    color: #ff9800;
+    font-weight: bold;
+    border-bottom: 2px solid #ff9800;
+}
+
+/* 🔼 Scroll to Top Button */
+#scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #0af;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    transition: opacity 0.3s;
+}
+
+/* 📱 Mobile Menu */
+#navToggle {
+    display: none;
+    background: #0af;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+/* 🌙 Dark Mode / Light Mode */
+.light-mode {
+    background: #f4f4f4;
+    color: #333;
+}
+.light-mode header, .light-mode section, .light-mode footer {
+    background: #ddd;
+}
+#themeToggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: #ff9800;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+/* 📱 Responsive Navigation */
+@media (max-width: 768px) {
+    #navToggle {
+        display: block;
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: #222;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+    }
+    nav ul.show {
+        display: flex;
+    }
+    nav ul li {
+        text-align: center;
+        padding: 10px 0;
+    }
+}
+
+/* 🏆 Fade-in Sections */
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s, transform 0.6s;
+}
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Light mode styles (default: dark mode) */
+.light-mode {
+    background-color: #fff;
+    color: #121212;
+}
+
+.light-mode header,
+.light-mode footer {
+    background-color: #f4f4f4;
+    color: #121212;
+}
+
+.light-mode section {
+    background-color: #e0e0e0;
+    color: #121212;
+}
+
+.light-mode a {
+    color: #007bff;
+}
+
+
+
